@@ -5,6 +5,9 @@
       location = "group:FirebaseTemplate.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:Pods/../GoogleService-Info.plist">
+   </FileRef>
+   <FileRef
       location = "group:Pods/Pods.xcodeproj">
    </FileRef>
 </Workspace>

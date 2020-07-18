@@ -18,6 +18,7 @@
 		A507FE0F5988DA4DBFF17075004D954D /* Encoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B0C4721B2D8519AE0677C3490E4C6B /* Encoder.swift */; };
 		D0A4065420FD2C1BE7E24D3B936F28DC /* FirestoreDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9DA1FD4555BB6048774B09900A6662 /* FirestoreDecoder.swift */; };
 		D6B1D0206F9583D5CE8FD99362BB47D4 /* CodableFirebase-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BA5E99B3BA56A80CA8D19C30A97834A4 /* CodableFirebase-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DF866AD624C3B1450008D2C3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DF866AD524C3B1450008D2C3 /* GoogleService-Info.plist */; };
 		FA990EEFEDD324E7849FFF378FF48D6E /* Decoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD20A75C4B9C4C54E5DD7251E4BB900F /* Decoder.swift */; };
 /* End PBXBuildFile section */
 
@@ -39,7 +40,7 @@
 		40A20036A26938A73EB725D1FA820A75 /* Pods-FirebaseTemplate.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FirebaseTemplate.modulemap"; sourceTree = "<group>"; };
 		4391BE1E7195C165B8EFB7E6976268EE /* Pods-FirebaseTemplate-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FirebaseTemplate-acknowledgements.plist"; sourceTree = "<group>"; };
 		475EA0F82A5E33C6AF6965CDB66F68A3 /* CodableFirebase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CodableFirebase.release.xcconfig; sourceTree = "<group>"; };
-		4A94FC58A21534580DADDEF0DD4CCDB9 /* CodableFirebase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CodableFirebase.framework; path = CodableFirebase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A94FC58A21534580DADDEF0DD4CCDB9 /* CodableFirebase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CodableFirebase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		58684AA03E8976981239BC7DBBA42B30 /* CodableFirebase-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CodableFirebase-prefix.pch"; sourceTree = "<group>"; };
 		6C2523C4214495DFB9382AC11787C944 /* FirestoreEncoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FirestoreEncoder.swift; path = CodableFirebase/FirestoreEncoder.swift; sourceTree = "<group>"; };
 		6EB9E0010C927600424072AD4D41497F /* Pods-FirebaseTemplate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FirebaseTemplate.debug.xcconfig"; sourceTree = "<group>"; };
@@ -48,14 +49,15 @@
 		8012AB43E3CD02B54A9DC696E868C582 /* Pods-FirebaseTemplate-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FirebaseTemplate-frameworks.sh"; sourceTree = "<group>"; };
 		81B0C4721B2D8519AE0677C3490E4C6B /* Encoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Encoder.swift; path = CodableFirebase/Encoder.swift; sourceTree = "<group>"; };
 		8FCC7694754B2EE901086C94DE914CC3 /* Pods-FirebaseTemplate-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FirebaseTemplate-umbrella.h"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		B095273A490C49951F51010B277DB8C7 /* CodableFirebase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CodableFirebase.debug.xcconfig; sourceTree = "<group>"; };
 		BA5E99B3BA56A80CA8D19C30A97834A4 /* CodableFirebase-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CodableFirebase-umbrella.h"; sourceTree = "<group>"; };
 		C5BD22CC6B2FBCBB6EBDBEEB1B9AAE0D /* CodableFirebase.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CodableFirebase.modulemap; sourceTree = "<group>"; };
 		C6C1BFAAF301BE2FF06540DF8ECB1031 /* FirebaseEncoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FirebaseEncoder.swift; path = CodableFirebase/FirebaseEncoder.swift; sourceTree = "<group>"; };
 		CC692CCA5E0D46E68F4F33B538735B32 /* CodableFirebase-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CodableFirebase-Info.plist"; sourceTree = "<group>"; };
 		CE9DA1FD4555BB6048774B09900A6662 /* FirestoreDecoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FirestoreDecoder.swift; path = CodableFirebase/FirestoreDecoder.swift; sourceTree = "<group>"; };
-		E6EB14EF7C6A66A728ACA1637E35A4D2 /* Pods_FirebaseTemplate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FirebaseTemplate.framework; path = "Pods-FirebaseTemplate.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF866AD524C3B1450008D2C3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E6EB14EF7C6A66A728ACA1637E35A4D2 /* Pods_FirebaseTemplate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FirebaseTemplate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB5F7A077DD92657D6C7EEA21503AE9F /* CodableFirebase-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CodableFirebase-dummy.m"; sourceTree = "<group>"; };
 		FD20A75C4B9C4C54E5DD7251E4BB900F /* Decoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Decoder.swift; path = CodableFirebase/Decoder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -108,7 +110,6 @@
 				6C2523C4214495DFB9382AC11787C944 /* FirestoreEncoder.swift */,
 				BF09CF01A1E97698EA5E3F72014AEB93 /* Support Files */,
 			);
-			name = CodableFirebase;
 			path = CodableFirebase;
 			sourceTree = "<group>";
 		};
@@ -160,6 +161,7 @@
 				EBA3918496F8E8DE11D6E190526A5D67 /* Pods */,
 				9F15090DD4CBFED4D2D542B3521A388F /* Products */,
 				7D15EE9843288588D07A2965F79E1227 /* Targets Support Files */,
+				DF866AD524C3B1450008D2C3 /* GoogleService-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -271,6 +273,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF866AD624C3B1450008D2C3 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
