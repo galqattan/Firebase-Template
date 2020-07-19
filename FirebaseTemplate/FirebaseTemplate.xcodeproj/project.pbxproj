@@ -76,6 +76,7 @@
 		DF866ACD24C3A4530008D2C3 /* Lalezar-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DF866AA924C3A4520008D2C3 /* Lalezar-Regular.ttf */; };
 		DF866AD124C3A4530008D2C3 /* ReemKufi-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DF866AAF24C3A4520008D2C3 /* ReemKufi-Regular.ttf */; };
 		DF866ADA24C3C2D60008D2C3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DF866AD924C3C2D60008D2C3 /* GoogleService-Info.plist */; };
+		DF866ADD24C3F69D0008D2C3 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF866ADC24C3F69D0008D2C3 /* ProfileVC.swift */; };
 		F44A754633CD1CC597E156F9 /* Pods_FirebaseTemplate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F46289A53C740F541F362795 /* Pods_FirebaseTemplate.framework */; };
 /* End PBXBuildFile section */
 
@@ -158,6 +159,7 @@
 		DF866AAF24C3A4520008D2C3 /* ReemKufi-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ReemKufi-Regular.ttf"; sourceTree = "<group>"; };
 		DF866AB224C3A4520008D2C3 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DF866AD924C3C2D60008D2C3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DF866ADC24C3F69D0008D2C3 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		F46289A53C740F541F362795 /* Pods_FirebaseTemplate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FirebaseTemplate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -392,6 +394,7 @@
 				DF866A9C24C3A4520008D2C3 /* LaunchPageVC.swift */,
 				DF866A9D24C3A4520008D2C3 /* CreatedVC.swift */,
 				DF866A9E24C3A4520008D2C3 /* LaunchVC.swift */,
+				DF866ADC24C3F69D0008D2C3 /* ProfileVC.swift */,
 				DF866A9F24C3A4520008D2C3 /* SignVC.swift */,
 				DF866AA324C3A4520008D2C3 /* LoginPageVC.swift */,
 				DF866A9224C3A4520008D2C3 /* Places */,
@@ -609,6 +612,7 @@
 				D2C2705224662C9A005E16A3 /* User.swift in Sources */,
 				DF866AC824C3A4530008D2C3 /* MainCountryVC.swift in Sources */,
 				DF866ABD24C3A4530008D2C3 /* PlacesVC.swift in Sources */,
+				DF866ADD24C3F69D0008D2C3 /* ProfileVC.swift in Sources */,
 				D2C2705024662C73005E16A3 /* NetworkingSignUp.swift in Sources */,
 				DF866AC024C3A4530008D2C3 /* MajorsVC.swift in Sources */,
 				D2C2704524662C63005E16A3 /* ImageLoader.swift in Sources */,

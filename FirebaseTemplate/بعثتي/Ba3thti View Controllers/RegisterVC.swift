@@ -134,7 +134,7 @@ class RegisterVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource
                            self.performSegue(withIdentifier: "success", sender: nil)
                        }){
                            // ❌ Failed
-                           self.errorMessage(message: "Couldn't sign in, make sure the email and password are correct")
+                           self.errorMessage(message: "Couldn't register, make sure the email and password are correct")
                        }
                    }
                    else{
