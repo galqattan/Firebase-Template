@@ -11,10 +11,10 @@ import UIKit
 var selectedCountry : country = country (country: "Ireland", officeList: kcoIreland, studentList: mentorsDataIreland, majorsList: majorsDataIreland, placesList: placesIreland)
 
 var whichSender: Int!
+var selectedCountryMajor : allMajors!
 
 class CountryVC: UIViewController {
 
-    var selectedCountryMajor : allMajors!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -52,7 +52,21 @@ class CountryVC: UIViewController {
 
     }
     
-    
+    // MARK: - Sign Out
+    @IBAction func signOut(){
+            let alertController = UIAlertController(title: "Sign out!", message: "Are you sure you want to sign out?" , preferredStyle: .alert)
+            let cancelAction = UIAlertAction(title: "Cancel", style: .cancel)
+            alertController.addAction(cancelAction)
+            let okAction = UIAlertAction(title: "Sign out!", style: .destructive) { action in
+                Networking.signOut(success: {
+                    // Goes back to the previous presented Modally view controller (SignInVC)
+                    self.dismiss(animated: true, completion: nil)
+                })
+            }
+            alertController.addAction(okAction)
+            self.present(alertController, animated: true)
+        }
+
     // MARK: - Navigation
 
      //In a storyboard-based application, you will often want to do a little preparation before navigation
