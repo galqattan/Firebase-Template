@@ -8,15 +8,13 @@
 
 import UIKit
 import MapKit
-import CoreLocation
 
-class OfficeVC: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
+class OfficeVC: UIViewController, MKMapViewDelegate {
 
     let locationManager = CLLocationManager()
     
-    @IBOutlet weak var addressTextField: UITextField!
+    
     @IBOutlet weak var map: MKMapView!
-    @IBOutlet weak var directionsBtn: UIButton!
     @IBOutlet weak var numberOffice: UILabel!
     @IBOutlet weak var openingTimes: UILabel!
     @IBOutlet weak var addressOffice: UILabel!
@@ -28,8 +26,7 @@ class OfficeVC: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
         
     override func viewDidLoad() {
         super.viewDidLoad()
-       
-        locationManager.delegate = self
+    
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.requestAlwaysAuthorization()
         locationManager.requestWhenInUseAuthorization()
@@ -51,26 +48,8 @@ class OfficeVC: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
         dismiss(animated: true, completion: nil)
     }
     
-    @IBAction func directionsTapped(_ sender: Any) {
-        getAddress()
-    }
     
-// MARK: - Get Address Function
-    func getAddress(){
-        let geoCoder = CLGeocoder()
-        geoCoder.geocodeAddressString(addressTextField.text!) { (placemarks, error) in
-            guard let placemarks = placemarks, let location = placemarks.first?.location
-                else{
-                    print("No Location Found")
-                    return
-            }
-            print("•Loc",location)
-            self.mapThis(destinationCord: location.coordinate)
-        }
-    }
-    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        print("Loc",locations)
-    }
+    
 
 // MARK: - Map Coordinates & Directions Function
     func mapThis(destinationCord : CLLocationCoordinate2D) {
@@ -79,13 +58,26 @@ class OfficeVC: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
         let destPlaceMark = MKPlacemark(coordinate: destinationCord)
         let sourceItem = MKMapItem(placemark: sourcePlaceMark)
         let destItem = MKMapItem(placemark: destPlaceMark)
-        
+
         let destinationRequest = MKDirections.Request()
         destinationRequest.source = sourceItem
         destinationRequest.destination = destItem
         destinationRequest.transportType = .automobile
         destinationRequest.requestsAlternateRoutes = true
         
+
+    // MARK: - Adding embassies pin to the map
+        let annotation = MKPointAnnotation()
+        annotation.coordinate = CLLocationCoordinate2D(latitude: 29.390545, longitude: 47.995060)
+        annotation.title = "British Embassy"
+        annotation.subtitle = "British Embassy Arabian Gulf Street Dasman"
+        map.addAnnotation(annotation)
+        
+        let region = MKCoordinateRegion(center: annotation.coordinate, latitudinalMeters: 500, longitudinalMeters: 500)
+        map.setRegion(region, animated: true)
+        
+
+
         let directions = MKDirections(request: destinationRequest)
         directions.calculate { (response, error) in
             guard let response = response else{
@@ -98,8 +90,10 @@ class OfficeVC: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
             self.map.addOverlay(route.polyline)
             self.map.setVisibleMapRect(route.polyline.boundingMapRect, animated: true)
         }
+
+        }
     }
-    
+
 // MARK: - Map View Function
     func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
         let render = MKPolylineRenderer(overlay: overlay as! MKPolyline)
@@ -117,4 +111,4 @@ class OfficeVC: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
     }
     */
 
-}
+

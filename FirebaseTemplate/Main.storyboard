@@ -459,10 +459,6 @@
                                     <action selector="backbtn:" destination="XUv-Oz-TdY" eventType="touchUpInside" id="T67-Jq-XUs"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Twitter" translatesAutoresizingMaskIntoConstraints="NO" id="jMU-tR-esm">
-                                <rect key="frame" x="111" y="770" width="35" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Youtube" translatesAutoresizingMaskIntoConstraints="NO" id="jzh-uD-ECb">
                                 <rect key="frame" x="109" y="812" width="38" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -482,48 +478,36 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="KCO Bg" translatesAutoresizingMaskIntoConstraints="NO" id="1pf-Dv-VZ5">
-                                <rect key="frame" x="12" y="491" width="397" height="278"/>
+                                <rect key="frame" x="33" y="529" width="349" height="251"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mwn-nY-ZN9">
-                                <rect key="frame" x="38" y="518" width="164" height="121"/>
+                                <rect key="frame" x="46" y="550" width="164" height="121"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="ReemKufi-Regular" family="Reem Kufi" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pZI-jF-vt0">
-                                <rect key="frame" x="236" y="518" width="136" height="124"/>
+                                <rect key="frame" x="225" y="548" width="136" height="124"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="ReemKufi-Regular" family="Reem Kufi" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L5v-sZ-OdM">
-                                <rect key="frame" x="74" y="667" width="274" height="66"/>
+                                <rect key="frame" x="76" y="679" width="258" height="66"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="ReemKufi-Regular" family="Reem Kufi" pointSize="18"/>
+                                <fontDescription key="fontDescription" name="ReemKufi-Regular" family="Reem Kufi" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ftf-Ds-LNf">
-                                <rect key="frame" x="30" y="278" width="274" height="34"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Twitter" translatesAutoresizingMaskIntoConstraints="NO" id="jMU-tR-esm">
+                                <rect key="frame" x="111" y="770" width="35" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocorrectionType="no"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qt2-ew-Ml0">
-                                <rect key="frame" x="312" y="275" width="82" height="41"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="search btn">
-                                    <color key="titleColor" red="0.39211523529999998" green="0.39218604559999998" blue="0.39210599660000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="directionsTapped:" destination="XUv-Oz-TdY" eventType="touchUpInside" id="eA3-ya-ncu"/>
-                                </connections>
-                            </button>
+                            </imageView>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="aKr-Qh-ABC">
-                                <rect key="frame" x="30" y="336" width="354" height="147"/>
+                                <rect key="frame" x="20" y="265" width="374" height="252"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </mapView>
                         </subviews>
@@ -533,8 +517,6 @@
                     <navigationItem key="navigationItem" id="aAW-3F-4om"/>
                     <connections>
                         <outlet property="addressOffice" destination="L5v-sZ-OdM" id="75y-XE-KE8"/>
-                        <outlet property="addressTextField" destination="Ftf-Ds-LNf" id="sEj-Pk-73S"/>
-                        <outlet property="directionsBtn" destination="qt2-ew-Ml0" id="arM-nS-epO"/>
                         <outlet property="map" destination="aKr-Qh-ABC" id="Njw-Mg-t9F"/>
                         <outlet property="numberOffice" destination="Mwn-nY-ZN9" id="P2k-Ax-IsW"/>
                         <outlet property="openingTimes" destination="pZI-jF-vt0" id="GLt-69-z1J"/>
@@ -1263,6 +1245,5 @@
         <image name="Twitter" width="48" height="48"/>
         <image name="Youtube" width="62.333332061767578" height="62.333332061767578"/>
         <image name="majorsBg" width="125" height="270.66665649414062"/>
-        <image name="search btn" width="464" height="226"/>
     </resources>
 </document>
