@@ -10,12 +10,12 @@ import Foundation
 
 // MARK: - Student Mentors
 var  mentorsDataIreland : [StudentMentor] = [
-    StudentMentor(name: "Shahad Mohammed", description: "University College Dublin \n Civil Engineering \n 20 Years Old \n +353 1 437 0969", countryImg: "Ireland Btn"),
-    StudentMentor(name: "Yousef Almousawi", description: "Trinity College Dublin \n Pharmacy \n 21 Years Old \n +353 3 726 9375", countryImg: "Ireland Btn"),
-    StudentMentor(name: "Ahmed Alawadhi", description: "Royal College of Surgeons in Ireland \n Medicine \n 24 Years Old \n +353 1 272 9938", countryImg: "Ireland Btn"),
-    StudentMentor(name: "Dana Ali", description: "National University of Ireland Galway \n Chemical Engineering \n 19 Years Old \n +353 3 882 0138", countryImg: "Ireland Btn"),
-    StudentMentor(name: "Khaled Essa", description: "Dublin City University \n Civil Engineering \n 22 Years Old \n +353 3 732 2882", countryImg: "Ireland Btn"),
-    StudentMentor(name: "Jenan Dashti", description: "University of Limerick \n Dentistry \n 20 Years Old \n +353 7 993 2200", countryImg: "Ireland Btn")
+    StudentMentor(name: "Shahad Mohammed", university: "University College Dublin \n", major:  "Civil Engineering \n", mobileNumber: "+353 1 437 0969", countryImg: "Ireland Btn"),
+    StudentMentor(name: "Yousef Almousawi", university: "Trinity College Dublin \n", major: "Pharmacy \n", mobileNumber: "+353 3 726 9375", countryImg: "Ireland Btn"),
+    StudentMentor(name: "Ahmed Alawadhi", university: "Royal College of Surgeons in Ireland \n", major:  "Medicine \n", mobileNumber: "+353 1 272 9938", countryImg: "Ireland Btn"),
+    StudentMentor(name: "Dana Ali", university: "National University of Ireland Galway \n", major:  "Chemical Engineering \n", mobileNumber:  "+353 3 882 0138", countryImg: "Ireland Btn"),
+    StudentMentor(name: "Khaled Essa", university: "Dublin City University \n", major: "Civil Engineering \n", mobileNumber: "+353 3 732 2882", countryImg: "Ireland Btn"),
+    StudentMentor(name: "Jenan Dashti", university: "University of Limerick \n", major: "Dentistry \n", mobileNumber:  "+353 7 993 2200", countryImg: "Ireland Btn")
 ]
 
 // MARK: - Majors

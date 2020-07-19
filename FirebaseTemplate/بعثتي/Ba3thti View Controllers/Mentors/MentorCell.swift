@@ -12,7 +12,10 @@ class MentorCell: UITableViewCell {
 
     @IBOutlet weak var mentorBg: UIImageView!
     @IBOutlet weak var mentorName: UILabel!
-    @IBOutlet weak var mentorDescription: UILabel!
+    @IBOutlet weak var mentorUnnii: UILabel!
+    @IBOutlet weak var mentorrMajoor: UILabel!
+    @IBOutlet weak var phoneeNumberr: UILabel!
+    @IBOutlet weak var countryyyName: UILabel!
     @IBOutlet weak var countryImg: UIImageView!
     
     

@@ -55,14 +55,17 @@ class StudentMentorVC: UIViewController, UITableViewDelegate, UITableViewDataSou
     return chosenCountry.count
     }
    
-   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "mentorcell") as! MentorCell
         cell.mentorName.text = chosenCountry[indexPath.row].name
-        cell.mentorDescription.text = chosenCountry[indexPath.row].description
+        cell.mentorUnnii.text = chosenCountry[indexPath.row].university
+        cell.mentorrMajoor.text = chosenCountry[indexPath.row].major
+        cell.phoneeNumberr.text = chosenCountry[indexPath.row].mobileNumber
+        cell.countryyyName.text = chosenCountry[indexPath.row].countryNamee
         cell.countryImg.image = UIImage(named: chosenCountry[indexPath.row].countryImg ?? "")
-    
-    
-  return cell
+
+        
+        return cell
    }
     
     

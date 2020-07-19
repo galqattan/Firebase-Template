@@ -14,7 +14,7 @@ var  mentorsDataCanada : [StudentMentor] = [
     StudentMentor(name: "Aqeel Ibraheem", university: "University of Alberta \n", major: "Dentistry \n", mobileNumber:  "+1 293 748 9930", countryImg: "Canada Btn"),
     StudentMentor(name: "Sarah Rushoud", university: "University of Waterloo \n", major: "Chemical Engineering \n", mobileNumber:  "+1 294 003 6349", countryImg: "Canada Btn"),
     StudentMentor(name: "Ali Alali", university: "McGill University \n", major: "Civil Engineering \n", mobileNumber:  "+1 933 450 7483", countryImg: "Canada Btn"),
-    StudentMentor(name: "Ghadeer Baqer", description: "University of Toronto \n Medicine \n 23 Years Old \n +1 883 490 7493", countryImg: "Canada Btn")
+    StudentMentor(name: "Ghadeer Baqer", university: "University of Toronto \n", major: "Medicine \n", mobileNumber: "+1 883 490 7493", countryImg: "Canada Btn")
 ]
 
 // MARK: - Majors
