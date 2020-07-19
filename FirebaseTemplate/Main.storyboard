@@ -885,9 +885,6 @@
                                 <rect key="frame" x="220" y="259" width="135" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="Not Interested"/>
-                                <connections>
-                                    <segue destination="bCH-aM-Sib" kind="show" id="3Sn-x5-WZ0"/>
-                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="If you are interested, enter your details:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZxE-vw-Ztf">
                                 <rect key="frame" x="67" y="375" width="280" height="27"/>
@@ -1224,7 +1221,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="3Sn-x5-WZ0"/>
         <segue reference="5kc-Sn-ozQ"/>
         <segue reference="hhp-gW-aHz"/>
     </inferredMetricsTieBreakers>
