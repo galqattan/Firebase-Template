@@ -10,12 +10,12 @@ import Foundation
 
 // MARK: - Student Mentors
 var  mentorsDataIreland : [StudentMentor] = [
-    StudentMentor(name: "Shahad Mohammed", description: "University College Dublin \n Civil Engineering \n 20 Years Old \n +353 1 437 0969", countryImg: #imageLiteral(resourceName: "Ireland Btn")),
-    StudentMentor(name: "Yousef Almousawi", description: "Trinity College Dublin \n Pharmacy \n 21 Years Old \n +353 3 726 9375", countryImg: #imageLiteral(resourceName: "Ireland Btn")),
-    StudentMentor(name: "Ahmed Alawadhi", description: "Royal College of Surgeons in Ireland \n Medicine \n 24 Years Old \n +353 1 272 9938", countryImg: #imageLiteral(resourceName: "Ireland Btn")),
-    StudentMentor(name: "Dana Ali", description: "National University of Ireland Galway \n Chemical Engineering \n 19 Years Old \n +353 3 882 0138", countryImg: #imageLiteral(resourceName: "Ireland Btn")),
-    StudentMentor(name: "Khaled Essa", description: "Dublin City University \n Civil Engineering \n 22 Years Old \n +353 3 732 2882", countryImg: #imageLiteral(resourceName: "Ireland Btn")),
-    StudentMentor(name: "Jenan Dashti", description: "University of Limerick \n Dentistry \n 20 Years Old \n +353 7 993 2200", countryImg: #imageLiteral(resourceName: "Ireland Btn"))
+    StudentMentor(name: "Shahad Mohammed", description: "University College Dublin \n Civil Engineering \n 20 Years Old \n +353 1 437 0969", countryImg: "Ireland Btn"),
+    StudentMentor(name: "Yousef Almousawi", description: "Trinity College Dublin \n Pharmacy \n 21 Years Old \n +353 3 726 9375", countryImg: "Ireland Btn"),
+    StudentMentor(name: "Ahmed Alawadhi", description: "Royal College of Surgeons in Ireland \n Medicine \n 24 Years Old \n +353 1 272 9938", countryImg: "Ireland Btn"),
+    StudentMentor(name: "Dana Ali", description: "National University of Ireland Galway \n Chemical Engineering \n 19 Years Old \n +353 3 882 0138", countryImg: "Ireland Btn"),
+    StudentMentor(name: "Khaled Essa", description: "Dublin City University \n Civil Engineering \n 22 Years Old \n +353 3 732 2882", countryImg: "Ireland Btn"),
+    StudentMentor(name: "Jenan Dashti", description: "University of Limerick \n Dentistry \n 20 Years Old \n +353 7 993 2200", countryImg: "Ireland Btn")
 ]
 
 // MARK: - Majors

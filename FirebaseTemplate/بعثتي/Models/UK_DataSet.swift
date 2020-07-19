@@ -11,12 +11,12 @@ import Foundation
 
 // MARK: - Student Mentors
 var  mentorsDataUK : [StudentMentor] = [
-    StudentMentor(name: "Sarah Alali", description: "University of Leeds \n Dentistry \n 20 Years Old \n +44 07 949 92 1888", countryImg: #imageLiteral(resourceName: "England Btn")),
-    StudentMentor(name: "Abdulaziz Alkandari", description: "King's College London \n Business \n 22 Years Old \n +44 07 548 60 3467", countryImg: #imageLiteral(resourceName: "England Btn")),
-    StudentMentor(name: "Faisal Alfadhli", description: "Liverpool John Moores University \n Civil Engineering \n 22 Years Old \n +44 07 833 47 5395", countryImg: #imageLiteral(resourceName: "England Btn")),
-    StudentMentor(name: "Fouz Abdulwahab", description: "Univeristy of Nottingham \n Medicine \n 19 Years Old \n +44 07 283 73 7042", countryImg: #imageLiteral(resourceName: "England Btn")),
-    StudentMentor(name: "Hamad Alghanim", description: "University of Brighton \n Pharmacy \n 20 Years Old \n +44 07 993 57 4668", countryImg: #imageLiteral(resourceName: "England Btn")),
-    StudentMentor(name: "Yasmeen Boareki", description: "University of Salford \n EE Engineering \n 21 Years Old \n +44 07 693 40 2376", countryImg: #imageLiteral(resourceName: "England Btn"))
+    StudentMentor(name: "Sarah Alali", university: "University of Leeds \n", major: "Dentistry \n",  mobileNumber: "+44 07 949 92 1888", countryImg: "England Btn"),
+    StudentMentor(name: "Abdulaziz Alkandari", university: "King's College London \n", major: "Business \n", mobileNumber: "+44 07 548 60 3467", countryImg: "England Btn"),
+    StudentMentor(name: "Faisal Alfadhli", university: "Liverpool John Moores University \n", major:  "Civil Engineering \n", mobileNumber:  "+44 07 833 47 5395", countryImg: "England Btn"),
+    StudentMentor(name: "Fouz Abdulwahab", university: "Univeristy of Nottingham \n", major: "Medicine \n", mobileNumber: "+44 07 283 73 7042", countryImg: "England Btn"),
+    StudentMentor(name: "Hamad Alghanim", university: "University of Brighton \n", major: "Pharmacy \n", mobileNumber: "+44 07 993 57 4668", countryImg: "England Btn"),
+    StudentMentor(name: "Yasmeen Boareki", university: "University of Salford \n", major: "EE Engineering \n", mobileNumber: "+44 07 693 40 2376", countryImg: "England Btn")
 ]
 
 // MARK: - Majors

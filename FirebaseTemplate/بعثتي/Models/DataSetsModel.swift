@@ -8,13 +8,16 @@
 
 import Foundation
 import UIKit
-
+import CodableFirebase
 
 // MARK: - Student Mentor Struct
-struct StudentMentor {
-  var name: String
-  var description: String
-  var countryImg: UIImage
+struct StudentMentor: Codable {
+    var name: String!
+    var university: String!
+    var major: String!
+    var mobileNumber: String!
+    var countryNamee: String!
+    var countryImg: String!
 }
 
 // MARK: - Major Struct

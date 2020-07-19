@@ -10,8 +10,11 @@ import UIKit
 
 class StudentMentorVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
     
+    
+    
     var chosenCountry : [StudentMentor] = selectedCountry.studentList
-
+    var tempList : [StudentMentor] = []
+    var category : String!
  
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var mentorTitle: UILabel!
@@ -22,9 +25,20 @@ class StudentMentorVC: UIViewController, UITableViewDelegate, UITableViewDataSou
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+
         tableView.dataSource = self
         tableView.delegate = self
-        tableView.reloadData()
+        
+        guard let category = category
+            else {
+                return
+        }
+        Networking.getListOf(COLLECTION_NAME: "mentors") { (mymentors: [StudentMentor]) in
+            self.tempList = mymentors.filter{$0.countryImg == category}
+            self.tableView.reloadData()
+
+        }
 
         // Do any additional setup after loading the view.
     }
@@ -45,7 +59,7 @@ class StudentMentorVC: UIViewController, UITableViewDelegate, UITableViewDataSou
         let cell = tableView.dequeueReusableCell(withIdentifier: "mentorcell") as! MentorCell
         cell.mentorName.text = chosenCountry[indexPath.row].name
         cell.mentorDescription.text = chosenCountry[indexPath.row].description
-        cell.countryImg.image = chosenCountry[indexPath.row].countryImg
+        cell.countryImg.image = UIImage(named: chosenCountry[indexPath.row].countryImg ?? "")
     
     
   return cell

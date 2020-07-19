@@ -10,12 +10,12 @@ import Foundation
 
 // MARK: - Student Mentors
 var  mentorsDataUSA : [StudentMentor] = [
-    StudentMentor(name: "Retaj Hamad", description:"Arizona State University \n EE Engineering \n 22 Years Old \n +1 408 638 0968", countryImg: #imageLiteral(resourceName: "America Btn")),
-    StudentMentor(name: "Mohammed Alkhalaf", description: "University of Pennsylvania \n Medicine \n 22 Years Old \n +1 308 950 7392", countryImg: #imageLiteral(resourceName: "America Btn")),
-    StudentMentor(name: "Abdullah Ashkanani", description: "Univeristy of Miami \n Chemical Engineering \n 23 Years Old \n +1 503 294 3006", countryImg: #imageLiteral(resourceName: "America Btn")),
-    StudentMentor(name: "Hawraa Abdullah", description: "University of Florida \n Civil Engineering \n 20 Years Old \n +1 646 876 9923", countryImg: #imageLiteral(resourceName: "America Btn")),
-    StudentMentor(name: "Salah Hameed", description: "University of San Diego \n Pharmacy \n 21 Years Old \n +1 333 467 2828", countryImg: #imageLiteral(resourceName: "America Btn")),
-    StudentMentor(name: "Sheikha Alotaibi", description: "Arizona State University \n Dentistry \n 19 Years Old \n +1 677 389 1963", countryImg: #imageLiteral(resourceName: "America Btn"))
+    StudentMentor(name: "Retaj Hamad", university: "Arizona State University \n", major: "EE Engineering \n", mobileNumber: "+1 408 638 0968", countryImg: "America Btn"),
+    StudentMentor(name: "Mohammed Alkhalaf",  university: "University of Pennsylvania \n", major: "Medicine \n", mobileNumber: "+1 308 950 7392", countryImg: "America Btn"),
+    StudentMentor(name: "Abdullah Ashkanani", university: "Univeristy of Miami \n", major: "Chemical Engineering \n", mobileNumber: "+1 503 294 3006", countryImg: "America Btn"),
+    StudentMentor(name: "Hawraa Abdullah", university: "University of Florida \n", major: "Civil Engineering \n", mobileNumber: "+1 646 876 9923", countryImg: "America Btn"),
+    StudentMentor(name: "Salah Hameed", university: "University of San Diego \n", major: "Pharmacy \n", mobileNumber: "+1 333 467 2828", countryImg: "America Btn"),
+    StudentMentor(name: "Sheikha Alotaibi", university: "Arizona State University \n", major: "Dentistry \n", mobileNumber:  "+1 677 389 1963", countryImg: "America Btn")
  ]
 
 // MARK: - Majors

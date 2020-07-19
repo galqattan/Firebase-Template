@@ -9,12 +9,12 @@
 import Foundation
 // MARK: - Student Mentors
 var  mentorsDataCanada : [StudentMentor] = [
-    StudentMentor(name: "Batool Alyousef", description: "Queen's University \n Chemical Engineering \n 19 Years Old \n +1 800 953 7247", countryImg: #imageLiteral(resourceName: "Canada Btn")),
-    StudentMentor(name: "Abdulwahab Alkanderi", description: "University of Ottowa \n Civil Engineering \n 22 Years Old \n +1 700 458 9274", countryImg: #imageLiteral(resourceName: "Canada Btn")),
-    StudentMentor(name: "Aqeel Ibraheem", description: "University of Alberta \n Dentistry \n 20 Years Old \n +1 293 748 9930", countryImg: #imageLiteral(resourceName: "Canada Btn")),
-    StudentMentor(name: "Sarah Rushoud", description:"University of Waterloo \n Chemical Engineering \n 18 Years Old \n +1 294 003 6349", countryImg: #imageLiteral(resourceName: "Canada Btn")),
-    StudentMentor(name: "Ali Alali", description: "McGill University \n Civil Engineering \n 20 Years Old \n +1 933 450 7483", countryImg: #imageLiteral(resourceName: "Canada Btn")),
-    StudentMentor(name: "Ghadeer Baqer", description: "University of Toronto \n Medicine \n 23 Years Old \n +1 883 490 7493", countryImg: #imageLiteral(resourceName: "Canada Btn"))
+    StudentMentor(name: "Batool Alyousef", university: "Queen's University \n", major: "Chemical Engineering \n", mobileNumber: "+1 800 953 7247", countryImg: "Canada Btn"),
+    StudentMentor(name: "Abdulwahab Alkanderi", university: "University of Ottowa \n", major:  "Civil Engineering \n", mobileNumber:  "+1 700 458 9274", countryImg: "Canada Btn"),
+    StudentMentor(name: "Aqeel Ibraheem", university: "University of Alberta \n", major: "Dentistry \n", mobileNumber:  "+1 293 748 9930", countryImg: "Canada Btn"),
+    StudentMentor(name: "Sarah Rushoud", university: "University of Waterloo \n", major: "Chemical Engineering \n", mobileNumber:  "+1 294 003 6349", countryImg: "Canada Btn"),
+    StudentMentor(name: "Ali Alali", university: "McGill University \n", major: "Civil Engineering \n", mobileNumber:  "+1 933 450 7483", countryImg: "Canada Btn"),
+    StudentMentor(name: "Ghadeer Baqer", description: "University of Toronto \n Medicine \n 23 Years Old \n +1 883 490 7493", countryImg: "Canada Btn")
 ]
 
 // MARK: - Majors

@@ -7,9 +7,11 @@
 //
 
 import UIKit
+import Firebase
+import CodableFirebase
+import MessageUI
 
-class RegisterMentorVC: UIViewController {
-var whichCountry = "United Kingdom"
+class RegisterMentorVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
 
     @IBOutlet weak var nameMentorField: UITextField!
     @IBOutlet weak var universityField: UITextField!
@@ -17,21 +19,68 @@ var whichCountry = "United Kingdom"
     @IBOutlet weak var mentorNumberField: UITextField!
     @IBOutlet weak var countryField: UITextField!
     @IBAction func registeredMentor(_ sender: Any) {
-        var nameMentor = nameMentorField.text!
-        var mentorUni = universityField.text!
-        var mentorMajor = mentorMajorField.text!
-        var mentorNumber = mentorNumberField.text!
-        var descriptionMentor = mentorUni + mentorMajor + mentorNumber
-     if whichCountry == "United Kingdom"{
-            mentorsDataUK.append(StudentMentor(name: nameMentor, description: descriptionMentor, countryImg: UIImage(named: "England Btn")!))
-                
-            }
+        
+      
+        let nameMentor = nameMentorField.text!
+        let mentorUni = universityField.text!
+        let mentorMajor = mentorMajorField.text!
+        let mentorNumber = mentorNumberField.text!
+        let countryMentor = countryField.text!
+        
+        let studentMentor = StudentMentor(name: nameMentor, university: mentorUni, major: mentorMajor, mobileNumber: mentorNumber, countryNamee: countryMentor)
+        
+        Networking.createItem(studentMentor, inCollection: "mentors"){
+             print("Successfully added student mentor")
+         
         }
+       
+        dismiss(animated: true, completion: nil)
+    }
+  
+        let countriess = ["United Kingdom", "United States of America", "Ireland", "Canada"]
+        var countryPickerView = UIPickerView()
+     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        countryPickerView.delegate = self
+        countryPickerView.dataSource = self
+        countryField.inputView = countryPickerView
+        countryField.placeholder = "Country"
+        
+        
+        
+            }
 
+        
         // Do any additional setup after loading the view.
+    
+
+// MARK: - Country Picker View
+    
+    public func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    public func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return countriess.count
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return countriess[row]
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        countryField.text = countriess[row]
+        countryField.resignFirstResponder()
+        
+        // MARK: - toolbar
+        let toolbar = UIToolbar()
+        toolbar.sizeToFit()
+
+        //MARK: - assign tool bar & picker
+        countryField.inputAccessoryView = toolbar
+        countryField.inputView = countryPickerView
     }
     
 

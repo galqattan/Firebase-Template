@@ -28,7 +28,6 @@ class ProfileVC: UIViewController {
         
         Networking.getSingleDocument("users/\(Networking.getUserId()!)", success: { (useR: User) in
             self.userInfo = useR
-            print(self.userInfo)
             self.fullName.text = "\(self.userInfo.firstName) \(self.userInfo.lastName)"
             self.profileEmail.text = self.userInfo.email
             self.profileBirthdate.text = self.userInfo.birthdate
