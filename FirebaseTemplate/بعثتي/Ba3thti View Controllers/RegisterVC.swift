@@ -44,7 +44,7 @@ class RegisterVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource
     
     
     @IBAction func backBtn(_ sender: Any) {
-        performSegue(withIdentifier: "back", sender: nil)
+        dismiss(animated: true, completion: nil)
     }
     
     
@@ -115,23 +115,70 @@ class RegisterVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource
     
 // MARK: - Alert Controller
         @IBAction func registerDone(_ sender: UIButton) {
-   if
-       firstNameTextField.text ==  "" || lastNameTextField.text == ""  || emailTextField.text == "" || confirmEmailTextField.text == "" || passwordTextField.text == "" || confirmPassTextField.text == "" || genderTextField.text == "" || birthDate.text == "" {
-                  let alertController = UIAlertController(title: nil, message: "Fill out all of your information to continue your registration.", preferredStyle: .alert)
-                  let restartAction = UIAlertAction(title: "Done", style: .default) { (alert) in}
-                  alertController.addAction(restartAction)
-                 present(alertController, animated: true, completion: nil)
+            let firstName = firstNameTextField.text!
+            let lastName = lastNameTextField.text!
+            let email = emailTextField.text!
+            let confirmEmail = confirmEmailTextField.text!
+            let password = passwordTextField.text!
+            let confirmPass = confirmPassTextField.text!
+            let gender = genderTextField.text!
+            let birthdate = birthDate.text!
+            
+            
+            let usernameee = User(firstName: firstName, lastName: lastName, email: email, emailConfirm: confirmEmail, password: password, passwordConfirm: confirmPass, gender: gender, birthdate: birthdate)
+            
+            if validatePassword(password: password, confirmPass: confirmPass){
+                       Networking.signUp(user: usernameee , password: password, success:  { uid in
+                           // ✅ Success
+                           print("You have signed up successfully")
+                           self.performSegue(withIdentifier: "success", sender: nil)
+                       }){
+                           // ❌ Failed
+                           self.errorMessage(message: "Couldn't sign in, make sure the email and password are correct")
+                       }
+                   }
+                   else{
+                       errorMessage(message: "Password are not matching!")
+                   }
+               }
+               
+    func validatePassword(password: String, confirmPass: String) -> Bool{
+        return password == confirmPass
+    }
+            
+            func errorMessage(message: String){
+                let alertController = UIAlertController(title: "Error!", message: message , preferredStyle: .alert)
+                let okAction = UIAlertAction(title: "Ok", style: .cancel)
+                alertController.addAction(okAction)
+                present(alertController, animated: true)
+            }
 
-         performSegue(withIdentifier: "success", sender: nil)
-   } else if
-    firstNameTextField.text ==  firstNameTextField.text || lastNameTextField.text == lastNameTextField.text  || emailTextField.text == emailTextField.text || confirmEmailTextField.text == confirmPassTextField.text || passwordTextField.text == passwordTextField.text || confirmPassTextField.text == confirmPassTextField.text || genderTextField.text == genderTextField.text || birthDate.text == birthDate.text {
+            
+         
     
-   performSegue(withIdentifier: "success", sender: nil)
+    
+    
+    
+    
+            
+//
+//   if
+//       firstNameTextField.text ==  "" || lastNameTextField.text == ""  || emailTextField.text == "" || confirmEmailTextField.text == "" || passwordTextField.text == "" || confirmPassTextField.text == "" || genderTextField.text == "" || birthDate.text == "" {
+//                  let alertController = UIAlertController(title: nil, message: "Fill out all of your information to continue your registration.", preferredStyle: .alert)
+//                  let restartAction = UIAlertAction(title: "Done", style: .default) { (alert) in}
+//                  alertController.addAction(restartAction)
+//                 present(alertController, animated: true, completion: nil)
+//
+//         performSegue(withIdentifier: "success", sender: nil)
+//   } else if
+//    firstNameTextField.text ==  firstNameTextField.text || lastNameTextField.text == lastNameTextField.text  || emailTextField.text == emailTextField.text || confirmEmailTextField.text == confirmPassTextField.text || passwordTextField.text == passwordTextField.text || confirmPassTextField.text == confirmPassTextField.text || genderTextField.text == genderTextField.text || birthDate.text == birthDate.text {
+//
+//   performSegue(withIdentifier: "success", sender: nil)
    
    
             }
-        }
-   }
+        
+   
 
   /*
 // MARK: - Navigation

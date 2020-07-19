@@ -18,7 +18,7 @@
         <!--LaunchVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="LaunchVC" customModule="بعثتي" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LaunchVC" customModule="FirebaseTemplate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -87,7 +87,7 @@
         <!--SignVC-->
         <scene sceneID="K5g-U3-ZAR">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="Ie0-DP-Lzr" customClass="SignVC" customModule="بعثتي" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="Ie0-DP-Lzr" customClass="SignVC" customModule="FirebaseTemplate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hov-Op-ty4">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -163,7 +163,7 @@
         <!--CountryVC-->
         <scene sceneID="LgV-Lx-n4q">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="6Pv-Jw-SPp" customClass="CountryVC" customModule="بعثتي" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="6Pv-Jw-SPp" customClass="CountryVC" customModule="FirebaseTemplate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0WU-n4-5oW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -236,7 +236,7 @@
         <!--Main CountryVC-->
         <scene sceneID="l8m-hT-MJd">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="OsU-Gh-x7Y" customClass="MainCountryVC" customModule="بعثتي" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="OsU-Gh-x7Y" customClass="MainCountryVC" customModule="FirebaseTemplate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Kl9-Av-YFM">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -353,7 +353,7 @@
         <!--PlacesVC-->
         <scene sceneID="Pqw-PF-zmj">
             <objects>
-                <viewController modalTransitionStyle="flipHorizontal" modalPresentationStyle="fullScreen" id="Mb2-XK-FkO" customClass="PlacesVC" customModule="بعثتي" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="flipHorizontal" modalPresentationStyle="fullScreen" id="Mb2-XK-FkO" customClass="PlacesVC" customModule="FirebaseTemplate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xkN-Rb-KVF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -378,7 +378,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="placesCell" rowHeight="322" id="w40-B0-Fhe" customClass="PlacesCell" customModule="بعثتي" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="placesCell" rowHeight="322" id="w40-B0-Fhe" customClass="PlacesCell" customModule="FirebaseTemplate" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="322"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="w40-B0-Fhe" id="Pms-s0-Nbc">
@@ -435,7 +435,7 @@
         <!--OfficeVC-->
         <scene sceneID="K7f-Tg-wAY">
             <objects>
-                <viewController modalTransitionStyle="flipHorizontal" modalPresentationStyle="fullScreen" id="XUv-Oz-TdY" customClass="OfficeVC" customModule="بعثتي" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="flipHorizontal" modalPresentationStyle="fullScreen" id="XUv-Oz-TdY" customClass="OfficeVC" customModule="FirebaseTemplate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gbF-ag-cfg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -549,7 +549,7 @@
         <!--MajorsVC-->
         <scene sceneID="Co7-S2-JWP">
             <objects>
-                <viewController modalTransitionStyle="flipHorizontal" modalPresentationStyle="fullScreen" id="Kw4-7P-FdE" customClass="MajorsVC" customModule="بعثتي" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="flipHorizontal" modalPresentationStyle="fullScreen" id="Kw4-7P-FdE" customClass="MajorsVC" customModule="FirebaseTemplate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5dz-bf-9op">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -664,7 +664,7 @@
         <!--Majors DetailsVC-->
         <scene sceneID="Wkr-W3-u4F">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="suF-kV-bZG" customClass="MajorsDetailsVC" customModule="بعثتي" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="suF-kV-bZG" customClass="MajorsDetailsVC" customModule="FirebaseTemplate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fbb-1T-AEd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -737,7 +737,7 @@
         <!--Student MentorVC-->
         <scene sceneID="WAw-9G-rzh">
             <objects>
-                <viewController modalTransitionStyle="flipHorizontal" modalPresentationStyle="fullScreen" id="bCH-aM-Sib" customClass="StudentMentorVC" customModule="بعثتي" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="flipHorizontal" modalPresentationStyle="fullScreen" id="bCH-aM-Sib" customClass="StudentMentorVC" customModule="FirebaseTemplate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jZ1-M4-wwT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -747,7 +747,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="mentorcell" rowHeight="173" id="vds-j5-fR8" customClass="MentorCell" customModule="بعثتي" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="mentorcell" rowHeight="173" id="vds-j5-fR8" customClass="MentorCell" customModule="FirebaseTemplate" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="173"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vds-j5-fR8" id="4YT-IW-5QY" customClass="UITableViewCell">
@@ -829,7 +829,7 @@
         <!--Register MentorVC-->
         <scene sceneID="UIF-xo-xta">
             <objects>
-                <viewController id="LSd-l3-bxC" customClass="RegisterMentorVC" customModule="بعثتي" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="LSd-l3-bxC" customClass="RegisterMentorVC" customModule="FirebaseTemplate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LZf-a7-Cf0">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -942,7 +942,7 @@
         <!--RegisterVC-->
         <scene sceneID="VAk-SI-BC6">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="6P6-zV-mPO" customClass="RegisterVC" customModule="بعثتي" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="6P6-zV-mPO" customClass="RegisterVC" customModule="FirebaseTemplate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QZG-hG-dtH">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1091,7 +1091,7 @@
         <!--CreatedVC-->
         <scene sceneID="Wb5-yr-GOd">
             <objects>
-                <viewController modalTransitionStyle="flipHorizontal" modalPresentationStyle="fullScreen" id="jd4-qV-YD5" customClass="CreatedVC" customModule="بعثتي" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="flipHorizontal" modalPresentationStyle="fullScreen" id="jd4-qV-YD5" customClass="CreatedVC" customModule="FirebaseTemplate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VUr-jM-ONI">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1157,32 +1157,32 @@
                                     </attributedString>
                                 </state>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2PP-Ix-Vzc">
-                                <rect key="frame" x="49" y="360" width="315" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ghadeer Alqattan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2PP-Ix-Vzc">
+                                <rect key="frame" x="49" y="357" width="315" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="ReemKufi-Regular" family="Reem Kufi" pointSize="17"/>
-                                <color key="textColor" red="0.39211523529999998" green="0.39218604559999998" blue="0.39210599660000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="ReemKufi-Regular" family="Reem Kufi" pointSize="20"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xac-qJ-R7X">
-                                <rect key="frame" x="49" y="426" width="315" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="ReemKufi-Regular" family="Reem Kufi" pointSize="17"/>
-                                <color key="textColor" red="0.39211523529999998" green="0.39218604559999998" blue="0.39210599660000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bnn-gG-LUl">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Feb 21, 2003" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bnn-gG-LUl">
                                 <rect key="frame" x="49" y="493" width="315" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="ReemKufi-Regular" family="Reem Kufi" pointSize="17"/>
-                                <color key="textColor" red="0.39211523529999998" green="0.39218604559999998" blue="0.39210599660000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="ReemKufi-Regular" family="Reem Kufi" pointSize="20"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8iZ-iY-xGt">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Female" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8iZ-iY-xGt">
                                 <rect key="frame" x="49" y="560" width="315" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="ReemKufi-Regular" family="Reem Kufi" pointSize="17"/>
-                                <color key="textColor" red="0.39211523529999998" green="0.39218604559999998" blue="0.39210599660000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="ReemKufi-Regular" family="Reem Kufi" pointSize="20"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="g_alqattan@icloud.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xac-qJ-R7X">
+                                <rect key="frame" x="49" y="426" width="315" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ReemKufi-Regular" family="Reem Kufi" pointSize="20"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>

@@ -8,8 +8,8 @@
 
 import Foundation
 
-
-struct Item: Codable, Hashable{
-    var name: String
-    var price: Double
-}
+//
+//struct Item: Codable, Hashable{
+//    var name: String
+//    var price: Double
+//}

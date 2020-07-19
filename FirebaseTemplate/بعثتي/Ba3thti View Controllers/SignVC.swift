@@ -30,21 +30,49 @@ class SignVC: UIViewController {
     
     @IBAction func signBtn(_ sender: Any) {
     
-    if
-          emailTxtField.text ==  "" || passTxtField.text == ""  {
-                     let alertController = UIAlertController(title: nil, message: "Fill out all of your information to sign in.", preferredStyle: .alert)
-                     let restartAction = UIAlertAction(title: "Done", style: .default) { (alert) in}
-                     alertController.addAction(restartAction)
-                    present(alertController, animated: true, completion: nil)
-    } else if
-            emailTxtField.text ==  emailTxtField.text || passTxtField.text == passTxtField.text {
-            
-            
+               let email = emailTxtField.text!
+               let password = passTxtField.text!
         
-            performSegue(withIdentifier: "sign", sender: nil)
-            
-        
+    Networking.signIn(user: SignInCredentials(email: email, password: password), success: { uid in
+                // ✅ Success
+                print("You have signed in successfully")
+                self.performSegue(withIdentifier: "sign", sender: nil)
+            }){ error in
+                // ❌ Fail
+                self.errorMessage(message: "Couldn't sign in with error: \(error)")
+            }
         }
+        
+        
+        func errorMessage(message: String){
+            let alertController = UIAlertController(title: "Fill out all of your information to sign in.", message: message , preferredStyle: .alert)
+            let okAction = UIAlertAction(title: "Ok", style: .cancel)
+            alertController.addAction(okAction)
+            present(alertController, animated: true)
+        }
+    }
+        
+        
+        
+        
+        
+        
+        
+//    if
+//          emailTxtField.text ==  "" || passTxtField.text == ""  {
+//                     let alertController = UIAlertController(title: nil, message: "Fill out all of your information to sign in.", preferredStyle: .alert)
+//                     let restartAction = UIAlertAction(title: "Done", style: .default) { (alert) in}
+//                     alertController.addAction(restartAction)
+//                    present(alertController, animated: true, completion: nil)
+//    } else if
+//            emailTxtField.text ==  emailTxtField.text || passTxtField.text == passTxtField.text {
+//
+//
+//
+//            performSegue(withIdentifier: "sign", sender: nil)
+//
+//
+//        }
     /*
     // MARK: - Navigation
 
@@ -55,5 +83,4 @@ class SignVC: UIViewController {
     }
     */
 
-}
-}
+

@@ -8,13 +8,23 @@
 
 import Foundation
 
-struct Username {
-    var firstName: String
-    var lastName: String
-    var email: String
-    var emailConfirm: String
-    var password: String
-    var passwordConfirm: String
+struct User: Codable {
+    var firstName: String = ""
+    var lastName: String = ""
+    var email: String = ""
+    var emailConfirm: String = ""
+    var password: String = ""
+    var passwordConfirm: String = ""
+    var gender: String = ""
+    var birthdate: String = ""
+    
+    func getFullName() -> String{
+        firstName + " " + lastName
+     }
 }
 
-var username: [Username] = []
+struct SignInCredentials: Encodable {
+    var email: String
+    var password: String
+}
+

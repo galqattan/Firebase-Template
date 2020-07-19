@@ -37,7 +37,7 @@ class OfficeVC: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
         
         map.delegate = self
         
-        numberOffice.text = selectedOffice[0].phoneKCO
+       numberOffice.text = selectedOffice[0].phoneKCO
        openingTimes.text = selectedOffice[0].openingHours
        addressOffice.text = selectedOffice[0].address
        twitterAcc.text = selectedOffice[0].twitter
@@ -106,6 +106,7 @@ class OfficeVC: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
         render.strokeColor = .blue
         return render
     }
+
     /*
     // MARK: - Navigation
 
