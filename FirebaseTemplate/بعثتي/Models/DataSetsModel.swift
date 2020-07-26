@@ -54,6 +54,14 @@ struct KCO {
     var youtube: String
 }
 
+// MARK: - Halal Restaurants Struct
+struct restaurants {
+    var instaAcc: String
+    var food1: UIImage
+    var food2: UIImage
+    var food3: UIImage
+}
+
 // MARK: - Country Information Struct
 struct country {
     var country: String
@@ -61,5 +69,6 @@ struct country {
     var studentList: [StudentMentor]
     var majorsList: [Major]
     var placesList: [PlacesToGo]
+    var foodList: [restaurants]
 }
 

@@ -41,8 +41,15 @@ var kcoUK : [KCO] = [
     KCO(phoneKCO: "+44(0) 20 7761 8500 \n +44(0) 20 7761 8550  \n +44(0) 20 7761 8599 \n +44(0) 20 7761 8540", openingHours: "9:00-16:00 Opening Hours Mon. – Fri.", address: "60A Knightsbridge, London SW1X 7JX", twitter: "@KuwaitCultural", youtube: "Kuwait Cultural Office London")
 ]
 
+// MARK: - Halal Restaurants Information
+var restaurantsUK : [restaurants] = [
+    restaurants(instaAcc: "@staxdiner", food1: #imageLiteral(resourceName: "stax1"), food2: #imageLiteral(resourceName: "stax2"), food3: #imageLiteral(resourceName: "stax3")),
+    restaurants(instaAcc: "@meatgram", food1: #imageLiteral(resourceName: "meat1"), food2: #imageLiteral(resourceName: "meat2"), food3: #imageLiteral(resourceName: "meat3")),
+    restaurants(instaAcc: "@maroush", food1: #imageLiteral(resourceName: "maroush1"), food2: #imageLiteral(resourceName: "maroush2"), food3: #imageLiteral(resourceName: "maroush3"))
+]
+
 // MARK: - Country Information
-var countryInfoUK: country = country(country: "United Kingdom", officeList: kcoUK, studentList: mentorsDataUK, majorsList: majorsDataUK, placesList: placesUK)
+var countryInfoUK: country = country(country: "United Kingdom", officeList: kcoUK, studentList: mentorsDataUK, majorsList: majorsDataUK, placesList: placesUK, foodList: restaurantsUK)
 
 
 

@@ -40,5 +40,12 @@ var kcoUSA : [KCO] = [
     KCO(phoneKCO: "+ (1) 202 364 2104 \n + (1) 202 926 5868 \n + (1) 202 364 2100 \n + (1) 202 363 8394", openingHours: "9:30-17:00 Opening Hours Mon. – Fri.", address: "3500 International Drive, NW, Washington, DC", twitter: "@KuwaitCultureDC", youtube: "Kuwait Cultural Office Washington")
 ]
 
+// MARK: - Halal Restaurants Information
+var restaurantsUSA : [restaurants] = [
+    restaurants(instaAcc: "@thehalalguys", food1: #imageLiteral(resourceName: "halalguys1"), food2: #imageLiteral(resourceName: "halalguys2"), food3: #imageLiteral(resourceName: "halalguys3")),
+    restaurants(instaAcc: "@daveshotchicken", food1: #imageLiteral(resourceName: "daves1"), food2: #imageLiteral(resourceName: "daves2"), food3: #imageLiteral(resourceName: "daves3")),
+    restaurants(instaAcc: "@theurbanskillet", food1: #imageLiteral(resourceName: "urban1"), food2: #imageLiteral(resourceName: "urban2"), food3: #imageLiteral(resourceName: "urban3"))
+]
+
 // MARK: - Country Information
-var countryInfoUSA: country = country(country: "United States of America", officeList: kcoUSA, studentList: mentorsDataUSA, majorsList: majorsDataUSA, placesList: placesUSA)
+var countryInfoUSA: country = country(country: "United States of America", officeList: kcoUSA, studentList: mentorsDataUSA, majorsList: majorsDataUSA, placesList: placesUSA, foodList: restaurantsUSA)
