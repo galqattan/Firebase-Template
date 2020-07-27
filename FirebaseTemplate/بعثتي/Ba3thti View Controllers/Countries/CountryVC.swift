@@ -8,7 +8,7 @@
 
 import UIKit
 
-var selectedCountry : country = country (country: "Ireland", officeList: kcoIreland, studentList: mentorsDataIreland, majorsList: majorsDataIreland, placesList: placesIreland)
+var selectedCountry : country = country (country: "Ireland", officeList: kcoIreland, studentList: mentorsDataIreland, majorsList: majorsDataIreland, placesList: placesIreland, foodList: restaurantsIreland)
 
 var whichSender: Int!
 var selectedCountryMajor : allMajors!

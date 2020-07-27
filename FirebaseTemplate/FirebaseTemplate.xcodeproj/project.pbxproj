@@ -77,6 +77,8 @@
 		DF866AD124C3A4530008D2C3 /* ReemKufi-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DF866AAF24C3A4520008D2C3 /* ReemKufi-Regular.ttf */; };
 		DF866ADA24C3C2D60008D2C3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DF866AD924C3C2D60008D2C3 /* GoogleService-Info.plist */; };
 		DF866ADD24C3F69D0008D2C3 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF866ADC24C3F69D0008D2C3 /* ProfileVC.swift */; };
+		DFAB910224CF51830050540D /* RestaurantsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAB910124CF51830050540D /* RestaurantsVC.swift */; };
+		DFAB910624CF54F20050540D /* RestaurantsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAB910524CF54F20050540D /* RestaurantsCell.swift */; };
 		F44A754633CD1CC597E156F9 /* Pods_FirebaseTemplate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F46289A53C740F541F362795 /* Pods_FirebaseTemplate.framework */; };
 /* End PBXBuildFile section */
 
@@ -160,6 +162,8 @@
 		DF866AB224C3A4520008D2C3 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DF866AD924C3C2D60008D2C3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DF866ADC24C3F69D0008D2C3 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		DFAB910124CF51830050540D /* RestaurantsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantsVC.swift; sourceTree = "<group>"; };
+		DFAB910524CF54F20050540D /* RestaurantsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantsCell.swift; sourceTree = "<group>"; };
 		F46289A53C740F541F362795 /* Pods_FirebaseTemplate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FirebaseTemplate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -397,6 +401,7 @@
 				DF866ADC24C3F69D0008D2C3 /* ProfileVC.swift */,
 				DF866A9F24C3A4520008D2C3 /* SignVC.swift */,
 				DF866AA324C3A4520008D2C3 /* LoginPageVC.swift */,
+				DFAB910024CF51620050540D /* Halal Restaurants */,
 				DF866A9224C3A4520008D2C3 /* Places */,
 				DF866A9524C3A4520008D2C3 /* Majors */,
 				DF866A9824C3A4520008D2C3 /* Mentors */,
@@ -467,6 +472,15 @@
 				DF866AA924C3A4520008D2C3 /* Lalezar-Regular.ttf */,
 			);
 			path = Lalezar;
+			sourceTree = "<group>";
+		};
+		DFAB910024CF51620050540D /* Halal Restaurants */ = {
+			isa = PBXGroup;
+			children = (
+				DFAB910124CF51830050540D /* RestaurantsVC.swift */,
+				DFAB910524CF54F20050540D /* RestaurantsCell.swift */,
+			);
+			path = "Halal Restaurants";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -592,6 +606,7 @@
 			files = (
 				DF866AC124C3A4530008D2C3 /* MentorCell.swift in Sources */,
 				DF866AB924C3A4530008D2C3 /* DataSetsModel.swift in Sources */,
+				DFAB910224CF51830050540D /* RestaurantsVC.swift in Sources */,
 				D2C26FD424662807005E16A3 /* AppDelegate.swift in Sources */,
 				D2C2704C24662C6E005E16A3 /* Networking.swift in Sources */,
 				D2C2705724662F3F005E16A3 /* Item.swift in Sources */,
@@ -617,6 +632,7 @@
 				DF866AC024C3A4530008D2C3 /* MajorsVC.swift in Sources */,
 				D2C2704524662C63005E16A3 /* ImageLoader.swift in Sources */,
 				DF866ABB24C3A4530008D2C3 /* Username.swift in Sources */,
+				DFAB910624CF54F20050540D /* RestaurantsCell.swift in Sources */,
 				DF866AC324C3A4530008D2C3 /* RegisterMentorVC.swift in Sources */,
 				DF866ACA24C3A4530008D2C3 /* LoginPageVC.swift in Sources */,
 				DF866AC224C3A4530008D2C3 /* StudentMentorVC.swift in Sources */,
