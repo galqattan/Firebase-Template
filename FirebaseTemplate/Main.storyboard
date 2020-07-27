@@ -259,7 +259,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="Turquoise Rectangle"/>
                                 <connections>
-                                    <segue destination="gUD-5K-PRB" kind="show" id="vgw-NS-FOp"/>
+                                    <segue destination="gUD-5K-PRB" kind="show" identifier="toRestaurants" id="vgw-NS-FOp"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="heK-qc-zp0">
@@ -352,6 +352,7 @@
                         <outlet property="majorLbl" destination="4fW-2R-jpq" id="R4B-eh-CNd"/>
                         <outlet property="mentorLbl" destination="15r-M2-8oX" id="LyZ-1b-JX1"/>
                         <outlet property="placesToGoLbl" destination="0rA-QF-sZ0" id="2aw-oj-Loj"/>
+                        <outlet property="restaurantLbl" destination="pAw-pZ-b5X" id="vrf-az-kWN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yKK-Yj-yDT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -558,7 +559,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="377" id="9Cv-Yq-1b9" customClass="RestaurantsCell">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="377" id="9Cv-Yq-1b9" userLabel="cellsss" customClass="RestaurantsCell">
                                         <rect key="frame" x="0.0" y="28" width="414" height="377"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9Cv-Yq-1b9" id="Onw-6G-Ko7">
@@ -616,6 +617,9 @@
                         <viewLayoutGuide key="safeArea" id="Fsb-DX-GtO"/>
                     </view>
                     <navigationItem key="navigationItem" id="m2c-pM-zIF"/>
+                    <connections>
+                        <outlet property="tableView" destination="uvS-6p-9N7" id="Mzy-Ee-WKW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aZl-cF-uMF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

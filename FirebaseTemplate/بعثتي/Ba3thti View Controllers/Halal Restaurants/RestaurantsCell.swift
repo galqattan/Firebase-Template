@@ -18,6 +18,7 @@ class RestaurantsCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
+        configureRadius()
         // Initialization code
     }
 
@@ -26,5 +27,11 @@ class RestaurantsCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+    
+    func configureRadius(){
+           pic1.layer.cornerRadius = 20
+           pic2.layer.cornerRadius = 20
+           pic3.layer.cornerRadius = 20
 
+    }
 }

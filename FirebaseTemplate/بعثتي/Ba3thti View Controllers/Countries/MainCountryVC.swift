@@ -59,7 +59,10 @@ class MainCountryVC: UIViewController {
             segue = "toOffice"
             data = dataSetReciever.officeList
        
-     
+        case 4:
+            segue = "toRestaurants"
+            data = dataSetReciever.foodList
+            
         default:
             print("Data not found")
         }

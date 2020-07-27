@@ -8,11 +8,34 @@
 
 import UIKit
 
-class RestaurantsVC: UIViewController {
+class RestaurantsVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+// MARK: - Setting up Table View
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return foodChosen.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cellsss") as! RestaurantsCell
+          cell.accLbl.text = foodChosen[indexPath.row].instaAcc
+          cell.pic1.image = foodChosen[indexPath.row].food1
+          cell.pic2.image = foodChosen[indexPath.row].food2
+          cell.pic3.image = foodChosen[indexPath.row].food3
+
+        return cell
+    }
+    
+    
+    var foodChosen : [restaurants] = selectedCountry.foodList
+
+
+    @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+          tableView.dataSource = self
+          tableView.delegate = self
         // Do any additional setup after loading the view.
     }
     
