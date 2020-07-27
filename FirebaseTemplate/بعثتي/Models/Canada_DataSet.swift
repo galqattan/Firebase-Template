@@ -39,5 +39,12 @@ var kcoCanada : [KCO] = [
     KCO(phoneKCO: "+ (1) 613 241-8444 \n + (1) 613 241-8441 \n + (1) 613 241-8445", openingHours: "9:00-15:00 Opening Hours Mon. – Fri.", address: "47 Rue Clarence St, Ottawa, ON K1N 5P9, Canada", twitter: "@CulturaQ8", youtube: "Kuwait Cultural Office Ottowa")
 ]
 
+// MARK: - Halal Restaurants Information
+var restaurantsCanada : [restaurants] = [
+    restaurants(instaAcc: "@burgerfactory.ca", food1: #imageLiteral(resourceName: "bfactory1"), food2: #imageLiteral(resourceName: "bfactory2"), food3: #imageLiteral(resourceName: "bfactory3")),
+    restaurants(instaAcc: "@theburgeralley", food1: #imageLiteral(resourceName: "alley1"), food2: #imageLiteral(resourceName: "alley2"), food3: #imageLiteral(resourceName: "alley3")),
+    restaurants(instaAcc: "@ozzysburgers", food1: #imageLiteral(resourceName: "ozzys1"), food2: #imageLiteral(resourceName: "ozzys2"), food3: #imageLiteral(resourceName: "ozzys3"))
+]
+
 // MARK: - Country Information
-var countryInfoCanada: country = country(country: "Canada", officeList: kcoCanada, studentList: mentorsDataCanada, majorsList: majorsDataCanada, placesList: placesCanada)
+var countryInfoCanada: country = country(country: "Canada", officeList: kcoCanada, studentList: mentorsDataCanada, majorsList: majorsDataCanada, placesList: placesCanada, foodList: restaurantsCanada)

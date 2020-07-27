@@ -44,8 +44,8 @@ var kcoIreland : [KCO] = [
 var restaurantsIreland : [restaurants] = [
     restaurants(instaAcc: "@umifalafel", food1: #imageLiteral(resourceName: "umi1"), food2: #imageLiteral(resourceName: "umi2"), food3: #imageLiteral(resourceName: "umi3")),
     restaurants(instaAcc: "@gbkburgers", food1: #imageLiteral(resourceName: "gbk1"), food2: #imageLiteral(resourceName: "gbk2"), food3: #imageLiteral(resourceName: "gbk3")),
-    restaurants(instaAcc: "@ricksburgers", food1: #imageLiteral(resourceName: "ricks1"), food2: #imageLiteral(resourceName: "ricks2"), food3: #imageLiteral(resourceName: "ricks3")
-)
+    restaurants(instaAcc: "@ricksburgers", food1: #imageLiteral(resourceName: "ricks1"), food2: #imageLiteral(resourceName: "ricks2"), food3: #imageLiteral(resourceName: "ricks3"))
 ]
+
 // MARK: - Country Information
 var countryInfoIreland: country = country(country: "Ireland", officeList: kcoIreland, studentList: mentorsDataIreland, majorsList: majorsDataIreland, placesList: placesIreland, foodList: restaurantsIreland)
