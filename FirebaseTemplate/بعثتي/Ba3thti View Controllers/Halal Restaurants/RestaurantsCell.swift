@@ -9,12 +9,14 @@
 import UIKit
 
 class RestaurantsCell: UITableViewCell {
+ 
     
     @IBOutlet weak var backgrounddd: UIImageView!
-    @IBOutlet weak var accLbl: UILabel!
+    @IBOutlet weak var accLabl: UILabel!
     @IBOutlet weak var pic1: UIImageView!
     @IBOutlet weak var pic2: UIImageView!
     @IBOutlet weak var pic3: UIImageView!
+    
 
     override func awakeFromNib() {
         super.awakeFromNib()

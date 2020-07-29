@@ -18,6 +18,7 @@ class PlacesCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        configureRadius()
         // Initialization code
     }
 
@@ -26,5 +27,7 @@ class PlacesCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-
+    func configureRadius(){
+           imgPlace.layer.cornerRadius = 20
+    }
 }

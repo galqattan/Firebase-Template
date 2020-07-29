@@ -19,14 +19,13 @@ class RestaurantsVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellsss") as! RestaurantsCell
-          cell.accLbl.text = foodChosen[indexPath.row].instaAcc
+        cell.accLabl.text = foodChosen[indexPath.row].instaAcc
           cell.pic1.image = foodChosen[indexPath.row].food1
           cell.pic2.image = foodChosen[indexPath.row].food2
           cell.pic3.image = foodChosen[indexPath.row].food3
-
+    
         return cell
     }
-    
     
     var foodChosen : [restaurants] = selectedCountry.foodList
 
@@ -34,6 +33,7 @@ class RestaurantsVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
           tableView.dataSource = self
           tableView.delegate = self
         // Do any additional setup after loading the view.

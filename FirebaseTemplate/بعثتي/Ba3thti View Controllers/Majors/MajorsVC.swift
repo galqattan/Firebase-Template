@@ -24,8 +24,7 @@ class MajorsVC: UIViewController {
     @IBAction func back(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
-    
-    
+
     
     @IBAction func ifMajorTap(_ sender: UIButton) {
         switch sender.tag {

@@ -65,6 +65,7 @@ class MainCountryVC: UIViewController {
             
         default:
             print("Data not found")
+            break
         }
         performSegue(withIdentifier: segue, sender: data)
     
