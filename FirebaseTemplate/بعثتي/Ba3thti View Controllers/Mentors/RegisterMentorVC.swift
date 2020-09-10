@@ -29,10 +29,10 @@ class RegisterMentorVC: UIViewController, UIPickerViewDelegate, UIPickerViewData
         
         let studentMentor = StudentMentor(name: nameMentor, university: mentorUni, major: mentorMajor, mobileNumber: mentorNumber, countryNamee: countryMentor)
         
-        Networking.createItem(studentMentor, inCollection: "mentors"){
-             print("Successfully added student mentor")
-         
-        }
+//        Networking.createItem(studentMentor, inCollection: "mentors"){
+//             print("Successfully added student mentor")
+//
+//        }
        
         dismiss(animated: true, completion: nil)
     }
@@ -47,10 +47,7 @@ class RegisterMentorVC: UIViewController, UIPickerViewDelegate, UIPickerViewData
         countryPickerView.dataSource = self
         countryField.inputView = countryPickerView
         countryField.placeholder = "Country"
-        
-        
-        
-            }
+    }
 
         
         // Do any additional setup after loading the view.
